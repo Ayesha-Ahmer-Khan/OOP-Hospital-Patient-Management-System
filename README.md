@@ -1,11 +1,11 @@
-OOP – Hospital Patient Management System (HPMS)
-1. Assignment Objective
+🏥 OOP – Hospital Patient Management System (HPMS)
+1️⃣ Assignment Objective
 
 Drawing from the transition from procedural structures to classes, you are required to move beyond simple data containers to build a robust, secure, and scalable real-world application.
 
-This assignment focuses on the Four Pillars of OOP to solve a large-scale software problem that procedural programming cannot handle efficiently.
+This assignment focuses on the Four Pillars of Object-Oriented Programming (OOP) to solve a large-scale software problem that procedural programming cannot handle efficiently.
 
-2. Problem Statement: The Healthcare & Patient Management System (HPMS)
+2️⃣ Problem Statement: The Healthcare & Patient Management System (HPMS)
 
 A modern hospital requires a system to manage thousands of records across various departments including:
 
@@ -19,13 +19,13 @@ Billing
 
 You must design an integrated solution that ensures:
 
-Data security through encapsulation
+✅ Data security through encapsulation
 
-Automatic resource management via constructors and destructors
+✅ Automatic resource management via constructors and destructors
 
-Dynamic scalability using pointers and heap memory
+✅ Dynamic scalability using pointers and heap memory
 
-3. Technical Requirements & Critical Skills
+3️⃣ Technical Requirements & Critical Skills
 
 Your solution must be modular and include the following object-oriented techniques:
 
@@ -49,19 +49,16 @@ Department
 
 All sensitive data (e.g., patient IDs, balance, medical history) must be private.
 
-Implement public getter and setter functions with strict data validation.
+Implement public getter and setter functions.
+
+Apply strict data validation.
 
 Example:
-
-Ensure bill amounts cannot be negative.
-
-Ensure patient age is valid.
-
-Ensure contact numbers follow proper format.
+Ensure that values like bill amounts cannot be negative.
 
 3.3 Automatic Initialization & Cleanup
 
-Implement Overloaded Constructors:
+For every class, implement:
 
 Default Constructor
 
@@ -69,94 +66,62 @@ Parameterized Constructor
 
 Copy Constructor
 
-Include Destructors for all classes to:
+Destructor
 
-Handle automatic cleanup
+This ensures:
 
-Prevent memory leaks
+Objects start in a valid state
+
+Automatic cleanup
+
+Prevention of memory leaks
 
 3.4 Dynamic Memory Management
 
-Use new and delete operators.
+Use:
 
-Manage arrays of objects dynamically.
+new
 
-Allow the hospital system to scale the number of records at runtime.
+delete
+
+Manage an array of objects dynamically, allowing the hospital system to scale records at runtime.
 
 3.5 Pointer Operations
 
-Use pointers to link objects.
+Use pointers to link objects
 
-Example: A Doctor* pointer inside an Appointment object.
+Example: A Doctor* pointer inside an Appointment object
 
-Use the arrow operator (->) for member access.
+Use the arrow operator -> for member access
 
 3.6 Logic Implementation
 
-Your system must include behaviors such as:
+Your system must include real functionality such as:
 
-Calculating medical bills
+💰 Calculating medical bills
 
-Validating doctor availability
+🩺 Validating doctor availability
 
-Generating formatted reports using <iomanip>
+📊 Generating formatted reports using iomanip
 
-4. Required Functionalities
+4️⃣ Required Functionalities
 4.1 Patient Management
 
 Add New Patient
 
-Register a new patient with:
-
-Name
-
-Age
-
-ID
-
-Contact
-
-Medical history
-
 View Patient Details
-
-Display complete information of a specific patient.
 
 Update Patient Information
 
-Modify existing patient records.
-
 Delete Patient Record
 
-Remove a patient from the system.
+Search Patient (ID, name, etc.)
 
-Search Patient
-
-Find patients by:
-
-ID
-
-Name
-
-Other criteria
-
-List All Patients
-
-Display all registered patients in a formatted table.
+List All Patients (formatted table)
 
 4.2 Doctor Management
 
 Add New Doctor
-
-Register doctor with:
-
-Specialization
-
-ID
-
-Contact
-
-Availability
 
 View Doctor Details
 
@@ -164,13 +129,7 @@ Update Doctor Information
 
 Delete Doctor Record
 
-Search Doctor
-
-By ID
-
-By name
-
-By specialization
+Search Doctor (ID, name, specialization)
 
 List All Doctors
 
@@ -179,8 +138,6 @@ Check Doctor Availability
 4.3 Appointment Management
 
 Schedule Appointment
-
-Link patient and doctor.
 
 View Appointment Details
 
@@ -194,55 +151,29 @@ List Doctor Appointments
 
 View Daily Schedule
 
-Display all appointments for a given date.
-
 4.4 Medical Records Management
 
 Add Medical Record
-
-Diagnosis
-
-Treatment
-
-Prescription
 
 View Medical History
 
 Update Medical Record
 
-Search Medical Records
-
-By diagnosis
-
-By date
+Search Medical Records (diagnosis/date)
 
 4.5 Billing Management
 
 Generate Bill
 
-Consultation fees
-
-Medicine costs
-
-Tests
-
 View Bill Details
 
 Process Payment
-
-Record payment
-
-Update outstanding balance
 
 View Payment History
 
 Calculate Total Revenue
 
 List Pending Bills
-
-Unpaid
-
-Partially paid
 
 4.6 Department Management
 
@@ -252,63 +183,29 @@ Assign Doctor to Department
 
 View Department Details
 
-Display department information
-
-Show associated doctors
-
 List All Departments
 
 4.7 Reporting & Analytics
 
 Patient Summary Report
 
-Formatted report of all patients.
-
 Doctor Performance Report
-
-Number of appointments per doctor.
 
 Financial Summary Report
 
-Revenue
-
-Pending bills
-
-Payment statistics
-
-Appointment Statistics
-
-Daily trends
-
-Weekly trends
-
-Monthly trends
+Appointment Statistics (daily/weekly/monthly)
 
 4.8 Security & Access Control
 
-User Login System
+User Login System (admin, doctor, receptionist)
 
-Authenticate users:
-
-Admin
-
-Doctor
-
-Receptionist
-
-Role-Based Access
-
-Restrict functionalities based on user role.
+Role-Based Access Control
 
 Data Validation
 
-Ensure all inputs meet required criteria.
+Privacy Protection of sensitive information
 
-Privacy Protection
-
-Secure access to sensitive patient information.
-
-5. Required Modules for Scale
+5️⃣ Required Modules for Scale
 
 To ensure comprehensive implementation, include:
 
@@ -316,48 +213,56 @@ To ensure comprehensive implementation, include:
 
 Extensive user menus
 
-Formatted data display using <iomanip>
+Formatted data display using iomanip
 
 5.2 Validation Engine
 
-Detailed input checks
+Strict checks for:
 
-Prevent invalid data entry
+IDs
 
-Maintain data integrity
+Age
 
-5.3 Search & Filter Module
+Bill amounts
+
+Dates
+
+Availability
+
+Maintain full data integrity
+
+5.3 Search & Filter Engine
 
 Implement search algorithms
 
 Use pointers and dynamic arrays
 
-Efficient filtering of records
+Efficient record retrieval
 
 5.4 Security Layer
 
 Access control mechanisms
 
-Privacy enforcement
+Role-based restrictions
 
-Authentication system
+Secure patient data handling
 
-Real-world hospital data protection standards
+🎯 Final Goal
 
-Summary
+Your Healthcare & Patient Management System must:
 
-This assignment requires building a fully modular, secure, dynamic, and scalable Hospital Patient Management System (HPMS) using:
+Demonstrate all Four Pillars of OOP
 
 Encapsulation
 
-Constructors & Destructors
+Abstraction
 
-Dynamic memory management
+Inheritance
 
-Pointer-based object linking
+Polymorphism
 
-Role-based access control
+Use dynamic memory
 
-Real-world business logic implementation
+Follow secure coding practices
 
-The system must demonstrate mastery of Object-Oriented Programming principles while solving a realistic large-scale healthcare management problem.
+Implement a real-world scalable architecture
